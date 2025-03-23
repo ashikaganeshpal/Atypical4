@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atypical - Customizable Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <img src="./images/Atypicallogo.jpg" class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="upload.html">Upload Your Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="select.html">Select a Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="fa fa-user"></i> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <h2>Upload Your Design</h2>
+        <p>Upload your design and customize your outfit with measurements.</p>
+        
+        <!-- Upload Design -->
+        <label for="designUpload" class="upload-box">
+            <input type="file" id="designUpload" accept="image/*" onchange="previewImage(event)">
+            <i class="fa fa-upload"></i>
+            <p>Click to Upload</p>
+        </label>
+        <div class="preview-container">
+            <img id="designPreview" src="" alt="Design Preview" class="hidden">
+        </div>
+
+        <!-- Customization Form -->
+        <form class="customization-form">
+            <label for="material">Select Fibre:</label>
+            <input type="text" id="material" placeholder="Enter Fibre">
+            
+            <label for="color">Choose Color:</label>
+            <input type="color" id="color" value="#99BC85">
+
+            <h3>Measurements</h3>
+            <label for="length">Length:</label>
+            <input type="text" id="length" placeholder="Enter Length in inches">
+
+            <label for="waist">Waist Size:</label>
+            <input type="text" id="waist" placeholder="Enter Waist Size in inches">
+
+            <label for="arm">Arm Size:</label>
+            <input type="text" id="arm" placeholder="Enter Arm Size in inches">
+
+            <label for="sleeve">Sleeve Length:</label>
+            <input type="text" id="sleeve" placeholder="Enter Sleeve Length in inches">
+
+            <label for="shoulder">Shoulder Measurement:</label>
+            <input type="text" id="shoulder" placeholder="Enter Shoulder Measurement in inches">
+
+            <label for="chest">Chest Size:</label>
+            <input type="text" id="chest" placeholder="Enter Chest Size in inches">
+
+            <label for="neck">Neck Style:</label>
+            <input type="text" id="neck" placeholder="Describe Neck Style">
+
+            <button type="submit" class="btn">Submit Design</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Atypical - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

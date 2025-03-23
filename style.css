@@ -1,0 +1,480 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Color Palette */
+:root {
+    --primary-color: #86a788;
+    --secondary-color: #FFFDEC;
+    --accent-color:#FFE2E2;
+    --text-color: #f0b5b5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color:#99BC85;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+
+/* Bootstrap Navbar Styling */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 5px;
+    margin: 0;
+}
+
+.navbar-brand {
+    color: var(--secondary-color) !important;
+    font-size: 24px;
+    font-weight: 600;
+    height: 70px;
+    width: 100px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+.navbar-nav .nav-link {
+    color: var(--secondary-color) !important;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.about {
+    text-align: right;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+.about h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.about h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: center ;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+/* Slideshow Container */
+#imageCarousel {
+    max-width: 1500px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust Image Size */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+
+
+/* Upload Section */
+.upload-section {
+    text-align: center;
+    padding: 50px;
+    background: #FFFDEC;
+}
+
+.upload-section h2 {
+    font-size: 2rem;
+    color: #99BC85;
+}
+
+.upload-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Upload Box */
+.upload-box {
+    display: block;
+    border: 2px dashed #99BC85;
+    padding: 30px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #99BC85;
+    background: #FDFAF6;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.upload-box i {
+    font-size: 2rem;
+}
+
+.upload-box input {
+    display: none;
+}
+
+.preview-container {
+    margin-top: 20px;
+}
+
+#designPreview {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Form */
+.customization-form {
+    background: #E4EFE7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customization-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.customization-form input, .customization-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #99BC85;
+}
+
+.customization-form .btn {
+    background: #99BC85;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.customization-form .btn:hover {
+    background: #E4EFE7;
+}
+
+/* Login Page */
+
+Sign up 
+/* Color Palette */
+:root {
+    --primary-color: #86a788;
+    --secondary-color: #FFFDEC;
+    --accent-color:#FFE2E2;
+    --text-color: #FFCFCF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color:#99BC85;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+.signup-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #FFFDEC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.signup-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 50px;
+    
+}
+
+.signup-form .form-label {
+    font-weight: 500;
+    color: black;
+}
+
+.signup-form .form-control {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: #A1C398;
+}
+
+.signup-form button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.signup-form p {
+    color: var(--text-color);
+}
+/* Footer */
+.footer {
+    background-color: #86a788;
+    color: #FEFDED;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+Feedback
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Color Palette */
+:root {
+    --primary-color: #FA7070;
+    --secondary-color: #f3f0c6;
+    --accent-color: #C6EBC5;
+    --text-color: #A1C398;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Bootstrap Navbar Styling */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 15px;
+}
+
+.navbar-brand {
+    color: var(--secondary-color) !important;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+.navbar-nav .nav-link {
+    color: var(--secondary-color) !important;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.about {
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 18px;
+    color:#333;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* Feedback Section */
+.feedback {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.feedback h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.feedback-form {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form .form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+}
+
+.feedback-form .form-control {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feedback-form button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.about {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* select */
+

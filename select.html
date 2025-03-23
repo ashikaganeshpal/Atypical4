@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Design - Atypical</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: #FEFDED;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #86A788 !important;
+            margin:0;
+            padding: 2px;
+            padding-top: 2px;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+        }
+        .navbar-brand, .nav-link {
+            color: #FEFDED !important;
+            font-weight: 400;
+        }
+        .nav-link:hover {
+            color: #C6EBC5 !important;
+        }
+
+        /* Container */
+        .container {
+            margin-top: 15px;
+        }
+
+        /* Card Design */
+        .design-card {
+            border: 2px solid #A1C398;
+            border-radius: 10px;
+            padding: 20px;
+            background: #f0b5b5;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .design-card:hover {
+            transform: scale(1.02);
+        }
+
+        .design-img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .btn-approve {
+            background-color: #4fc01b;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-approve:hover {
+            background-color: #f0b5b5;
+        }
+
+        .btn-checkout {
+            background-color:#a30a0a;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-checkout:hover {
+            background-color: #C6EBC5;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #86A788;
+            color: #FEFDED;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .design-card {
+                padding: 15px;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <img src="./images/Atypicallogo.jpg" class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="upload.html">Upload Your Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="select.html">Select a Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" class="fa fa-user"> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Select a Design Section -->
+    <div class="container">
+        <h2 class="text-center mb-4">Select a Design</h2>
+        
+        <div class="row">
+            <!-- Sample Order 1 -->
+            <div class="col-md-6">
+                <div class="design-card">
+                    <img src="./images/img6.jpeg" class="design-img" alt="Design Image">
+                    <h4 class="mt-3">Customer: payal Sharma</h4>
+                    <p>Chosen Fabric: Cotton</p>
+                    <p>Design Type: kurta with sarara</p>
+                    <p>Price: ₹1500</p>
+                    <button class="btn btn-approve w-100" onclick="approveDesign(1)">Approve Design</button>
+                    <button class="btn btn-checkout w-100 mt-2" onclick="checkoutOrder(1, 1500)">Checkout</button>
+                </div>
+            </div>
+
+            <!-- Sample Order 2 -->
+            <div class="col-md-6">
+                <div class="design-card">
+                    <img src="./images/img4.jpeg" class="design-img" alt="Design Image">
+                    <h4 class="mt-3">Customer: Priya Mehta</h4>
+                    <p>Chosen Fabric: Silk</p>
+                    <p>Design Type: Lehenga</p>
+                    <p>Price: ₹2500</p>
+                    <button class="btn btn-approve w-100" onclick="approveDesign(2)">Approve Design</button>
+                    <button class="btn btn-checkout w-100 mt-2" onclick="checkoutOrder(2, 2500)">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Atypical. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function approveDesign(orderId) {
+            alert("Design for Order #" + orderId + " has been approved.");
+        }
+
+        function checkoutOrder(orderId, price) {
+            let confirmation = confirm("Final price is ₹" + price + ". Proceed to checkout?");
+            if (confirmation) {
+                alert("Order confirmation will be emailed.");
+            }
+        }
+    </script>
+</body>
+</html>
